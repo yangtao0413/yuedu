@@ -20,3 +20,5 @@ Route::get('/', function () {
     Route::get('Login/login','login\LoginController@login');
     Route::post('Login/loginto','login\LoginController@loginto');
     Route::any('Index/index','login\IndexController@index');
+    Route::any('index','login\IndexController@index');
+    Route::get("login/quit","login\\LoginController@quit");//退出页面
